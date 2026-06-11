@@ -67,69 +67,75 @@
 
     <!-- CONTACT CARDS -->
 
-    <section class="py-24 bg-white">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+   <section class="py-16 md:py-24 bg-white">
 
-    <div class="grid md:grid-cols-3 gap-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
 
-      <!-- CALL -->
-      <a href="tel:+918329242513"
-        class="bg-[#F8FCFF] p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 duration-300 block">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
 
-        <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-[#E6F7FA] text-[#46C7D9] text-2xl">
-          <i class="fa-solid fa-phone"></i>
+            <!-- CALL -->
+            <a href="tel:+918329242513"
+                class="bg-[#F8FCFF] p-6 sm:p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 transition duration-300 block">
+
+                <div
+                    class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-[#E6F7FA] text-[#46C7D9] text-xl sm:text-2xl">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#0A2D6D]">
+                    Call Us
+                </h3>
+
+                <p class="text-gray-600 mt-3 text-sm sm:text-base">
+                    +91 8329242513
+                </p>
+
+            </a>
+
+            <!-- EMAIL -->
+            <a href="mailto:jagrutabansode@gmail.com"
+                class="bg-[#F8FCFF] p-6 sm:p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 transition duration-300 block">
+
+                <div
+                    class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-[#E6F7FA] text-[#46C7D9] text-xl sm:text-2xl">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#0A2D6D]">
+                    Email Us
+                </h3>
+
+                <p class="text-gray-600 mt-3 text-sm sm:text-base break-all">
+                    jagrutabansode@gmail.com
+                </p>
+
+            </a>
+
+            <!-- LOCATION -->
+            <a href="https://maps.google.com/?q=Samarth+Healthcare+Andheri+West+Mumbai"
+                target="_blank"
+                class="bg-[#F8FCFF] p-6 sm:p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 transition duration-300 block">
+
+                <div
+                    class="w-14 h-14 sm:w-16 sm:h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-[#E6F7FA] text-[#46C7D9] text-xl sm:text-2xl">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <h3 class="text-xl sm:text-2xl font-semibold text-[#0A2D6D]">
+                    Visit Clinic
+                </h3>
+
+                <p class="text-gray-600 mt-3 text-sm sm:text-base">
+                    Samarth Healthcare<br>
+                    Andheri (West), Mumbai
+                </p>
+
+            </a>
+
         </div>
-
-        <h3 class="text-2xl font-semibold text-[#0A2D6D]">
-          Call Us
-        </h3>
-
-        <p class="text-gray-600 mt-4">
-          +91 8329242513
-        </p>
-
-      </a>
-
-      <!-- EMAIL -->
-      <a href="mailto:jagrutabansode@gmail.com"
-        class="bg-[#F8FCFF] p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 duration-300 block">
-
-        <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-[#E6F7FA] text-[#46C7D9] text-2xl">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
-
-        <h3 class="text-2xl font-semibold text-[#0A2D6D]">
-          Email Us
-        </h3>
-
-        <p class="text-gray-600 mt-4 break-all">
-          jagrutabansode@gmail.com
-        </p>
-
-      </a>
-
-      <!-- LOCATION -->
-      <a href="https://www.google.com/maps"
-        target="_blank"
-        class="bg-[#F8FCFF] p-8 rounded-3xl shadow-lg text-center hover:-translate-y-2 duration-300 block">
-
-        <div class="w-16 h-16 mx-auto mb-5 flex items-center justify-center rounded-full bg-[#E6F7FA] text-[#46C7D9] text-2xl">
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
-
-        <h3 class="text-2xl font-semibold text-[#0A2D6D]">
-          Visit Clinic
-        </h3>
-
-        <p class="text-gray-600 mt-4">
-          Samarth Healthcare<br>
-          Andheri (West), Mumbai
-        </p>
-
-      </a>
 
     </div>
-  </div>
+
 </section>
         <!-- CONTACT FORM & CLINIC DETAILS -->
 
@@ -284,19 +290,21 @@
             <div
                 class="bg-[#F8FCFF] rounded-[30px] shadow-lg p-10 max-w-3xl mx-auto">
 
-                <div class="flex justify-between py-4 border-b">
-                    <span>Monday - Saturday</span>
-                    <span class="font-semibold text-[#0A2D6D]">
-                        By Appointment
-                    </span>
-                </div>
+                <div class="flex flex-col sm:flex-row sm:justify-between py-4 border-b gap-2">
+    <span>Monday - Saturday</span>
 
-                <div class="flex justify-between py-4">
-                    <span>Sunday</span>
-                    <span class="font-semibold text-[#0A2D6D]">
-                        Closed / Emergency Only
-                    </span>
-                </div>
+    <span class="font-semibold text-[#0A2D6D] sm:text-right">
+        By Appointment
+    </span>
+</div>
+
+               <div class="flex flex-col sm:flex-row sm:justify-between py-4 gap-2">
+    <span>Sunday</span>
+
+    <span class="font-semibold text-[#0A2D6D] sm:text-right">
+        Closed / Emergency Only
+    </span>
+</div>
 
             </div>
 
@@ -305,34 +313,40 @@
     </section>
         <!-- GOOGLE MAP -->
 
-    <section class="py-24 bg-[#F8FCFF]">
+   <section class="py-24 bg-[#F8FCFF]">
 
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
 
-            <div class="text-center mb-16">
+        <div class="text-center mb-16">
 
-                <span class="text-[#46C7D9] font-semibold uppercase tracking-widest">
-                    Find Us
-                </span>
+            <span class="text-[#46C7D9] font-semibold uppercase tracking-widest">
+                Find Us
+            </span>
 
-                <h2 class="text-4xl md:text-5xl font-bold text-[#0A2D6D] mt-4">
-                    Clinic Location
-                </h2>
-
-            </div>
-
-            <div
-                class="overflow-hidden rounded-[30px] shadow-2xl"
-                data-aos="zoom-in">
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8530714831127!2d72.8417858!3d19.1141006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9cfbae79f6d%3A0xf6f34e9daf33bae!2sManubharti%2C%20Zalawad%20Nagar%2C%20Ganga%20Vihar%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400058!5e0!3m2!1sen!2sin!4v1781098484798!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            </div>
+            <h2 class="text-4xl md:text-5xl font-bold text-[#0A2D6D] mt-4">
+                Clinic Location
+            </h2>
 
         </div>
 
-    </section>
+        <div
+            class="overflow-hidden rounded-[30px] shadow-2xl"
+            data-aos="zoom-in">
 
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8530714831127!2d72.8417858!3d19.1141006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9cfbae79f6d%3A0xf6f34e9daf33bae!2sManubharti%2C%20Zalawad%20Nagar%2C%20Ganga%20Vihar%2C%20Andheri%20West%2C%20Mumbai%2C%20Maharashtra%20400058!5e0!3m2!1sen!2sin!4v1781098484798!5m2!1sen!2sin"
+                class="w-full h-[350px] md:h-[500px] lg:h-[600px]"
+                style="border:0;"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
     <!-- EMERGENCY CTA -->
 
     <section class="py-24 bg-[#0A2D6D]">
