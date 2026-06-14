@@ -147,54 +147,61 @@
 
                 <!-- CONTACT FORM -->
 
-                <div data-aos="fade-right">
+                <!-- CONTACT FORM -->
 
-                    <span class="text-[#46C7D9] font-semibold uppercase tracking-widest">
-                        Send Message
-                    </span>
+<div data-aos="fade-right">
 
-                    <h2 class="text-4xl font-bold text-[#0A2D6D] mt-4">
-                        Book An Appointment
-                    </h2>
+    <span class="text-[#46C7D9] font-semibold uppercase tracking-widest">
+        Send Message
+    </span>
 
-                    <form class="mt-8 space-y-5">
+    <h2 class="text-4xl font-bold text-[#0A2D6D] mt-4">
+        Book An Appointment
+    </h2>
 
-                        <input
-                            type="text"
-                            placeholder="Parent Name"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    <form id="whatsappBookingForm" action="/form/appointment-form" method="GET" class="mt-8 space-y-5">
 
-                        <input
-                            type="text"
-                            placeholder="Child Name"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+        <input
+            type="text"
+            name="parent_name"
+            placeholder="Parent Name"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                        <input
-                            type="tel"
-                            placeholder="Phone Number"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+        <input
+            type="text"
+            name="child_name"
+            placeholder="Child Name"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                        <input
-                            type="email"
-                            placeholder="Email Address"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                        <textarea
-                            rows="5"
-                            placeholder="Message"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]"></textarea>
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                        <button
-                            type="submit"
-                            class="bg-[#0A2D6D] text-white px-8 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="Message"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]"></textarea>
 
-                            Send Message
+        <button
+            type="submit"
+            class="bg-[#0A2D6D] text-white px-8 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
 
-                        </button>
+            Send Message
 
-                    </form>
+        </button>
 
-                </div>
+    </form>
+
+</div>
 
                 <!-- CLINIC DETAILS -->
 

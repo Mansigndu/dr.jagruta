@@ -76,51 +76,28 @@
 
                 <!-- FORM -->
 
-                <div data-aos="fade-right">
+              <form id="whatsappBookingForm" action="/form/appointment-form" method="GET" class="mt-8 space-y-5">
 
-                    <span class="text-[#46C7D9] font-semibold uppercase tracking-widest">
-                        Appointment Form
-                    </span>
+    <input type="text" name="parent_name" placeholder="Parent Name"
+        class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                    <h2 class="text-4xl font-bold text-[#0A2D6D] mt-4">
-                        Schedule Your Visit
-                    </h2>
+    <input type="tel" name="phone" placeholder="Phone Number"
+        class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                    <form class="mt-8 space-y-5">
+    <input type="email" name="email" placeholder="Email Address"
+        class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                        <input
-                            type="text"
-                            placeholder="Parent Name"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    <input type="text" name="child_name" placeholder="Child Name"
+        class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-                        <input
-                            type="tel"
-                            placeholder="Phone Number"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    <button type="submit"
+        class="bg-[#0A2D6D] text-white px-8 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
 
-                        <input
-                            type="email"
-                            placeholder="Email Address"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+        Continue Booking
 
-                        <input
-                            type="text"
-                            placeholder="Child Name"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    </button>
 
-                        <button
-                            type="submit"
-                            class="bg-[#0A2D6D] text-white px-8 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
-
-                            Continue Booking
-
-                        </button>
-
-                    </form>
-
-                </div>
-
-                <!-- RIGHT CONTENT -->
+</form> <!-- RIGHT CONTENT -->
 
                 <div data-aos="fade-left">
 
@@ -187,185 +164,108 @@
                 class="bg-white rounded-[30px] shadow-xl p-8 md:p-12"
                 data-aos="fade-up">
 
-                <form class="grid md:grid-cols-2 gap-6">
-
-                    <!-- CHILD AGE -->
-
-                    <div>
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Child Age
-
-                        </label>
-
-                        <input
-                            type="text"
-                            placeholder="e.g. 2 Years"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
-
-                    </div>
-
-                    <!-- GENDER -->
-
-                    <div>
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Gender
-
-                        </label>
-
-                        <select
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
-
-                            <option>Select Gender</option>
-
-                            <option>Male</option>
-
-                            <option>Female</option>
-
-                            <option>Other</option>
-
-                        </select>
-
-                    </div>
-
-                    <!-- SERVICE -->
-
-                    <div>
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Select Service
-
-                        </label>
-
-                        <select
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
-
-                            <option>Select Service</option>
-
-                            <option>Newborn Care & Neonatal Consultation</option>
-
-                            <option>Well Baby & Growth Monitoring</option>
-
-                            <option>Vaccination & Immunization</option>
-
-                            <option>Childhood Illness Management</option>
-
-                            <option>Nutritional Assessment & Counseling</option>
-
-                            <option>Developmental Assessment</option>
-
-                            <option>Pediatric Emergency Care</option>
-
-                            <option>Adolescent Health Consultation</option>
-
-                            <option>Preventive Child Healthcare</option>
-
-                            <option>Fever & Related Illnesses</option>
-
-                        </select>
-
-                    </div>
-
-                    <!-- APPOINTMENT DATE -->
-
-                    <div>
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Preferred Date
-
-                        </label>
-
-                        <input
-                            type="date"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
-
-                    </div>
-
-                    <!-- TIME -->
-
-                    <div>
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Preferred Time
-
-                        </label>
-
-                        <input
-                            type="time"
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
-
-                    </div>
-
-                    <!-- VISIT TYPE -->
-
-                    <div>
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Visit Type
-
-                        </label>
-
-                        <select
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
-
-                            <option>Select Visit Type</option>
-
-                            <option>First Visit</option>
-
-                            <option>Follow-Up Visit</option>
-
-                            <option>Emergency Consultation</option>
-
-                        </select>
-
-                    </div>
-
-                    <!-- MESSAGE -->
-
-                    <div class="md:col-span-2">
-
-                        <label
-                            class="block mb-2 font-medium text-[#0A2D6D]">
-
-                            Additional Notes
-
-                        </label>
-
-                        <textarea
-                            rows="5"
-                            placeholder="Describe symptoms or any concerns..."
-                            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]"></textarea>
-
-                    </div>
-
-                    <!-- BUTTON -->
-
-                    <div class="md:col-span-2">
-
-                        <button
-                            type="submit"
-                            class="bg-[#0A2D6D] text-white px-10 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
-
-                            Confirm Appointment
-
-                        </button>
-
-                    </div>
-
-                </form>
+                <form action="/form/appointment-form" method="GET" class="grid md:grid-cols-2 gap-6">
+
+    <!-- CHILD AGE -->
+    <div>
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Child Age</label>
+        <input
+            type="text"
+            name="child_age"
+            placeholder="e.g. 2 Years"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    </div>
+
+    <!-- GENDER -->
+    <div>
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Gender</label>
+        <select
+            name="gender"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+
+        </select>
+    </div>
+
+    <!-- SERVICE -->
+    <div>
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Select Service</label>
+        <select
+            name="service"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+
+            <option value="">Select Service</option>
+            <option value="Newborn Care">Newborn Care & Neonatal Consultation</option>
+            <option value="Growth Monitoring">Well Baby & Growth Monitoring</option>
+            <option value="Vaccination">Vaccination & Immunization</option>
+            <option value="Illness">Childhood Illness Management</option>
+            <option value="Nutrition">Nutritional Assessment & Counseling</option>
+            <option value="Development">Developmental Assessment</option>
+            <option value="Emergency">Pediatric Emergency Care</option>
+            <option value="Adolescent">Adolescent Health Consultation</option>
+
+        </select>
+    </div>
+
+    <!-- DATE -->
+    <div>
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Preferred Date</label>
+        <input
+            type="date"
+            name="date"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    </div>
+
+    <!-- TIME -->
+    <div>
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Preferred Time</label>
+        <input
+            type="time"
+            name="time"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+    </div>
+
+    <!-- VISIT TYPE -->
+    <div>
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Visit Type</label>
+        <select
+            name="visit_type"
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
+
+            <option value="">Select Visit Type</option>
+            <option value="First Visit">First Visit</option>
+            <option value="Follow Up">Follow-Up Visit</option>
+            <option value="Emergency">Emergency Consultation</option>
+
+        </select>
+    </div>
+
+    <!-- NOTES -->
+    <div class="md:col-span-2">
+        <label class="block mb-2 font-medium text-[#0A2D6D]">Additional Notes</label>
+        <textarea
+            name="message"
+            rows="5"
+            placeholder="Describe symptoms or concerns..."
+            class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]"></textarea>
+    </div>
+
+    <!-- BUTTON -->
+    <div class="md:col-span-2">
+        <button
+            type="submit"
+            class="bg-[#0A2D6D] text-white px-10 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
+
+            Confirm Appointment
+
+        </button>
+    </div>
+
+</form>
 
             </div>
 
