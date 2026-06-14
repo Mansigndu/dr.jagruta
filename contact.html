@@ -425,7 +425,7 @@
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            const inputs = form.querySelectorAll("input, textarea");
+            const inputs = form.querySelectorAll("input, textarea, select");
 
             let isEmpty = false;
 
@@ -435,7 +435,7 @@
                 }
             });
 
-            // message box inside form
+            // message box
             let msgBox = form.querySelector(".formMessage");
 
             if (!msgBox) {
@@ -447,11 +447,17 @@
             if (isEmpty) {
                 msgBox.style.color = "red";
                 msgBox.textContent = "⚠️ Please fill all the fields before submitting.";
-            } else {
-                msgBox.style.color = "green";
-                msgBox.textContent = "✅ Thank you! Your message has been sent successfully.";
-                form.reset();
+                return;
             }
+
+            msgBox.style.color = "green";
+            msgBox.textContent = "✅ Thank you! Redirecting...";
+
+            // small delay then redirect (sir requirement)
+            setTimeout(() => {
+                window.location.href = "/form/appointment-form";
+            }, 1000);
+
         });
 
     });

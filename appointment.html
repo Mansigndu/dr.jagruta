@@ -478,7 +478,7 @@
         });
 
     </script>
-    <script>
+   <script>
     const forms = document.querySelectorAll("form");
 
     forms.forEach((form) => {
@@ -486,18 +486,26 @@
         form.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            // get all inputs, selects, textarea
             const inputs = form.querySelectorAll("input, select, textarea");
 
             let isEmpty = false;
 
             inputs.forEach(el => {
-                if (el.value.trim() === "" || el.value === "Select Gender" || el.value === "Select Service" || el.value === "Select Visit Type") {
+
+                const emptyValues = [
+                    "",
+                    "Select Gender",
+                    "Select Service",
+                    "Select Visit Type"
+                ];
+
+                if (emptyValues.includes(el.value.trim())) {
                     isEmpty = true;
                 }
+
             });
 
-            // message box inside each form
+            // message box
             let msgBox = form.querySelector(".formMessage");
 
             if (!msgBox) {
@@ -509,11 +517,17 @@
             if (isEmpty) {
                 msgBox.style.color = "red";
                 msgBox.textContent = "⚠️ Please fill all the details before submitting.";
-            } else {
-                msgBox.style.color = "green";
-                msgBox.textContent = "✅ Thank you! Your appointment has been submitted successfully.";
-                form.reset();
+                return;
             }
+
+            msgBox.style.color = "green";
+            msgBox.textContent = "✅ Thank you! Redirecting...";
+
+            // redirect after success (sir requirement)
+            setTimeout(() => {
+                window.location.href = "/form/appointment-form";
+            }, 1000);
+
         });
 
     });
