@@ -18,12 +18,11 @@ footer.innerHTML = `
         MBBS, DNB Pediatrics
     </p>
     
-
-            <p class="text-gray-300 mt-4 leading-relaxed">
-                Child Specialist & Neonatologist dedicated to providing compassionate,
-                evidence-based and family-centered healthcare for newborns, infants,
-                children and adolescents.
-            </p>
+    <p class="text-gray-300 mt-4 leading-relaxed">
+        Child Specialist & Neonatologist dedicated to providing compassionate,
+        evidence-based and family-centered healthcare for newborns, infants,
+        children and adolescents.
+    </p>
 
         </a>
 
@@ -37,13 +36,9 @@ footer.innerHTML = `
             <ul class="space-y-3 mt-4 text-gray-300">
 
                 <li><a href="index.html" class="hover:text-white duration-300">Home</a></li>
-
                 <li><a href="about.html" class="hover:text-white duration-300">About</a></li>
-
                 <li><a href="services.html" class="hover:text-white duration-300">Services</a></li>
-
                 <li><a href="appointment.html" class="hover:text-white duration-300">Appointment</a></li>
-
                 <li><a href="contact.html" class="hover:text-white duration-300">Contact</a></li>
 
             </ul>
@@ -59,15 +54,15 @@ footer.innerHTML = `
 
     <ul class="space-y-3 mt-4 text-gray-300">
 
-        <li>Newborn Care</li>
+        <li><a href="newborn-care.html" class="hover:text-white duration-300">Newborn Care</a></li>
 
-        <li>Vaccination</li>
+        <li><a href="vaccination.html" class="hover:text-white duration-300">Vaccination</a></li>
 
-        <li>Growth Monitoring</li>
+        <li><a href="growth-monitoring.html" class="hover:text-white duration-300">Growth Monitoring</a></li>
 
-        <li>Nutritional Counseling</li>
+        <li><a href="nutritional-counseling.html" class="hover:text-white duration-300">Nutritional Counseling</a></li>
 
-        <li>Pediatric Consultation</li>
+        <li><a href="pediatric-consultation.html" class="hover:text-white duration-300">Pediatric Consultation</a></li>
 
     </ul>
 
@@ -121,9 +116,7 @@ footer.innerHTML = `
  target="_blank"
  class="fixed bottom-16 right-8 w-14 h-14 sm:w-16 sm:h-16 bg-green-500 rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl shadow-2xl z-50 hover:scale-110 transition duration-300">
 
-
 💬
-
 
 </a>
 `;
