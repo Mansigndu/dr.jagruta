@@ -71,32 +71,35 @@ footer.innerHTML = `
         <!-- CONTACT -->
         <div>
 
-            <h3 class="text-2xl font-semibold hover:text-[#46C7D9]">
-                Contact
-            </h3>
+    <h3 class="text-2xl font-semibold hover:text-[#46C7D9]">
+        Contact Us
+    </h3>
 
-            <div class="mt-4 space-y-3 text-gray-300">
+    <div class="mt-4 space-y-3 text-gray-300">
 
-                <a href="tel:+918329242513"
-                    class="block hover:text-white duration-300">
-                    📞 +91 8329242513
-                </a>
+        <a href="tel:+918329242513"
+            class="flex items-center gap-2 hover:text-white duration-300">
+            <span>📞</span>
+            <span>+91 83292 42513</span>
+        </a>
 
-                <a href="mailto:jagrutabansode@gmail.com"
-                    class="block hover:text-white duration-300">
-                    ✉️ jagrutabansode@gmail.com
-                </a>
+        <a href="mailto:contact@drjagrutabansode.com"
+            class="flex items-center gap-2 hover:text-white duration-300">
+            <span>✉️</span>
+            <span>contact@drjagrutabansode.com</span>
+        </a>
 
-                <p class="leading-relaxed">
-                    📍 Samarth Healthcare,<br>
-                    Andheri West, Mumbai
-                </p>
-
-            </div>
-
-        </div>
+        <p class="flex items-start gap-2 leading-relaxed">
+            <span>📍</span>
+            <span>
+                Samarth Healthcare<br>
+                Andheri West, Mumbai
+            </span>
+        </p>
 
     </div>
+
+</div>
 
     <!-- COPYRIGHT -->
 

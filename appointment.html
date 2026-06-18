@@ -75,10 +75,16 @@
             <div class="grid lg:grid-cols-2 gap-12">
 
                 <!-- FORM -->
+<form id="whatsappBookingForm" action="/form/appointment-form" method="GET" class="mt-8 space-y-5">
+    <span class="inline-block bg-[#FCEEF5] text-[#0A2D6D] px-4 py-2 rounded-full text-sm font-medium mb-4">
+    👶 Child-Friendly Pediatric Care
+</span>
 
-              <form id="whatsappBookingForm" action="/form/appointment-form" method="GET" class="mt-8 space-y-5">
+    <h3 class="text-3xl font-bold text-[#0A2D6D] mb-6">
+        Request a Callback
+    </h3>
 
-    <input type="text" name="parent_name" placeholder="Parent Name"
+    <input type="text" name="parent_name" placeholder="Full Name"
         class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
     <input type="tel" name="phone" placeholder="Phone Number"
@@ -87,52 +93,71 @@
     <input type="email" name="email" placeholder="Email Address"
         class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-    <input type="text" name="child_name" placeholder="Child Name"
+    <select name="consultation_mode"
         class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]">
 
-    <button type="submit"
-        class="bg-[#0A2D6D] text-white px-8 py-4 rounded-full hover:bg-[#46C7D9] duration-300">
+        <option value="">Select Consultation Mode</option>
+        <option>Clinic Visit</option>
+        <option>Online Consultation</option>
 
-        Continue Booking
+    </select>
+
+    <textarea name="child_name" rows="5"
+        placeholder="Brief Concern (Optional)"
+        class="w-full p-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-[#46C7D9]"></textarea>
+
+    <button type="submit"
+        class="w-full bg-[#0A2D6D] text-white py-4 rounded-2xl hover:bg-[#46C7D9] duration-300">
+
+        Send Enquiry
 
     </button>
 
-</form> <!-- RIGHT CONTENT -->
+</form>
+              
+              <div data-aos="fade-left">
 
-                <div data-aos="fade-left">
+    <div class="[bg-[#FFF8E1] rounded-[30px] p-8 shadow-lg">
 
-                    <div
-                        class="bg-[#0A2D6D] text-white rounded-[30px] p-10">
+        <h3 class="text-3xl font-bold text-[#0A2D6D] mb-6">
+            Clinic Information
+        </h3>
 
-                        <h3 class="text-3xl font-bold">
-                            Pediatric Care You Can Trust
-                        </h3>
+        <div class="space-y-5 text-gray-700">
 
-                        <p class="mt-6 leading-relaxed text-white/90">
+            <p>
+                📍 Zee Manubharti Building, C Wing,<br>
+                2nd Floor, Lallubhai Park Signal,<br>
+                SV Road, Andheri West,<br>
+                Mumbai – 400058
+            </p>
 
-                            Providing compassionate and evidence-based care
-                            for newborns, infants, children and adolescents.
+            <p>
+                📞 +91 8329242513
+            </p>
 
-                        </p>
+            <p>
+                ✉️ contact@drjagrutabansode.com
+            </p>
 
-                        <div class="mt-8 space-y-4">
+            <div class="bg-white p-5 rounded-2xl mt-4">
 
-                            <div>✅ 10+ Years Experience</div>
+                <h4 class="font-semibold text-[#0A2D6D] mb-2">
+                    Clinic Availability
+                </h4>
 
-                            <div>✅ Child Specialist & Neonatologist</div>
+                <p>
+                    Monday – Friday<br>
+                    7:00 PM – 9:00 PM
+                </p>
 
-                            <div>✅ Family-Centered Care</div>
+            </div>
 
-                            <div>✅ Preventive Healthcare</div>
+        </div>
 
-                            <div>✅ Vaccination & Growth Monitoring</div>
+    </div>
 
-                        </div>
-
-                    </div>
-
-                </div>
-
+</div>
             </div>
 
         </div>
@@ -451,7 +476,7 @@
         </h3>
 
         <p class="text-gray-600 mt-4 break-all">
-          jagrutabansode@gmail.com
+          contact@drjagrutabansode.com
         </p>
 
       </div>
