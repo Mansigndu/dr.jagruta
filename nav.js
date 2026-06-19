@@ -8,7 +8,7 @@ nav.innerHTML = `
         <!-- LOGO -->
         
         <a href="index.html" class="flex items-center gap-3">
-            <img src="./images/logo.jpeg"
+            <img src="https://ik.imagekit.io/5f5fo2fhm/drjagrutalogo.jpeg"
                 alt="Logo"
                 class="h-14 md:h-16 w-auto">
 
